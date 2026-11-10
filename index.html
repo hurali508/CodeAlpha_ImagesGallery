@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Heading -->
+  <header>
+    <h1>📸 My Photo Gallery</h1>
+    <p>Click on any photo to view it bigger</p>
+  </header>
+
+  <!-- Category filter buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+    <button class="filter-btn" data-filter="city">🏙️ City</button>
+    <button class="filter-btn" data-filter="animals">🐾 Animals</button>
+  </div>
+
+  <!-- Gallery grid -->
+  <div class="gallery">
+
+    <div class="item" data-category="city">
+      <img src="images/img 1.PNG" alt="Beautiful Building">
+      <div class="overlay"><span>Beautiful Building</span></div>
+    </div>
+
+    <div class="item" data-category="city">
+      <img src="images/img 2.PNG" alt="Road after Rain">
+      <div class="overlay"><span>Road after Rain</span></div>
+    </div>
+
+    <div class="item" data-category="city">
+      <img src="images/img 3.PNG" alt="City Lights">
+      <div class="overlay"><span>City Lights</span></div>
+    </div>
+
+    <div class="item" data-category="nature">
+      <img src="images/img 4.PNG" alt="Beautiful Nature">
+      <div class="overlay"><span>Beautiful Nature</span></div>
+    </div>
+
+    <div class="item" data-category="nature">
+      <img src="images/img 5.PNG" alt="Greenery">
+      <div class="overlay"><span>Greenery</span></div>
+    </div>
+
+    <div class="item" data-category="nature">
+      <img src="images/img 6.PNG" alt="Flowing Water">
+      <div class="overlay"><span>Flowing Water</span></div>
+    </div>
+
+    <div class="item" data-category="animals">
+      <img src="images/img 7.PNG" alt="Cat">
+      <div class="overlay"><span>Cat</span></div>
+    </div>
+
+    <div class="item" data-category="animals">
+      <img src="images/img 8.PNG" alt="Tiger">
+      <div class="overlay"><span>Tiger</span></div>
+    </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="close">✕</button>
+    <button class="nav prev" id="prev">❮</button>
+
+    <div class="lb-content">
+      <img id="lb-img" src="" alt="">
+      <p id="lb-caption"></p>
+      <p id="lb-counter"></p>
+    </div>
+
+    <button class="nav next" id="next">❯</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
